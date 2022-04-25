@@ -1,0 +1,92 @@
+ .dropdownAsesor {
+    position: absolute; 
+  }
+  a {
+    color: rgb(5, 5, 5);
+  }
+  .dropdownAsesorAsesor dd,
+  .dropdownAsesor dt {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .dropdownAsesor ul {
+    margin: -1px 0 0 0;
+  }
+  .dropdownAsesor dd {
+    position: relative;
+  }
+  .dropdownAsesor a,
+  .dropdownAsesor a:visited {
+    color: #000;
+    text-decoration: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    text-align: center;
+  }
+  .dropdownAsesor dt a {
+    -webkit-appearance: none;
+    box-shadow: 0.6px 0.6px 0.6px 1px rgb(233, 233, 233);
+    background-color: rgb(255, 255, 255);
+    display: block;
+    padding: 7px 40px 7px 12px;  
+    border-radius: 5px;
+    min-height: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    border: 0;
+    width: 272px;
+  }
+  .dropdownAsesor dt a span,
+  .multiSel span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 3px 2px 0;
+  }
+  .dropdownAsesor dd ul {
+    background-color: #fff;
+    border: 0px;
+    color: #000;
+    display: none;
+    left: 0px;
+    box-shadow: 0px 0px 0px 1px rgb(199, 199, 199);
+    position: absolute;
+    top: 2px;
+    width: 272px;
+    list-style: none;
+    height: 120px;
+    overflow: auto; 
+  }
+  .dropdownAsesor span.value {
+    display: none;
+  }
+  .dropdownAsesor dd ul li a {
+    padding: 5px;
+    display: block;
+  }
+  .dropdownAsesor dd ul li a:hover {
+    background-color: #fff;
+  }  
+  /* estrellas */
+:root {
+  --star-size: 20px;
+  --star-color: rgb(156, 144, 144);
+  --star-background: #fc0;
+}
+.starF {
+  --percent: calc(var(--rating) / 5 * 100%); 
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times;
+  line-height: 0;
+}
+.starF::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*calificacion */
